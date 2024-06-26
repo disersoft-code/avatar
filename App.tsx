@@ -1,8 +1,7 @@
 import { Canvas } from "@react-three/fiber/native";
 import { StatusBar } from "expo-status-bar";
 import { Suspense, useState } from "react";
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { SafeAreaView, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import Loader from "./components/Loader";
 import useControls from "r3f-native-orbitcontrols";
 import { Environment } from "@react-three/drei/native";
@@ -150,3 +149,59 @@ const styles = StyleSheet.create({
         fontWeight: "900",
     },
 });
+
+
+// import { StatusBar } from "expo-status-bar";
+// import { StyleSheet, View, Button } from "react-native";
+// import { Audio } from "expo-av";
+// import { useEffect, useState } from "react";
+
+// export default function App() {
+//     const [sound, setSound] = useState<Audio.Sound | null>(null);
+
+//     useEffect(() => {
+//         return () => {
+//             // Cleanup the sound when the component unmounts
+//             if (sound) {
+//                 sound.unloadAsync();
+//             }
+//         };
+//     }, [sound]);
+
+//     const playSound = async () => {
+//         try {
+//             const { sound } = await Audio.Sound.createAsync(
+//                 require("./assets/audio1.mp3")
+//             );
+//             setSound(sound);
+//             await sound.playAsync();
+//         } catch (error) {
+//             console.error("Error loading or playing sound", error);
+//         }
+//     };
+
+//     const stopSound = async () => {
+//         if (sound) {
+//             await sound.stopAsync();
+//             setSound(null);
+//         }
+//     };
+
+//     return (
+//         <View style={styles.container}>
+//             <Button title="Play Sound" onPress={playSound} />
+//             <Button title="Stop Sound" onPress={stopSound} />
+//             <StatusBar style="auto" />
+//         </View>
+//     );
+// }
+
+// const styles = StyleSheet.create({
+//     container: {
+//         flex: 1,
+//         backgroundColor: "transparent",
+//         alignItems: "center",
+//         justifyContent: "center",
+//         gap: 40,
+//     },
+// });
