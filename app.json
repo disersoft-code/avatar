@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "testexpoav",
-    "slug": "testexpoav",
+    "name": "avatar",
+    "slug": "avatar",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -19,7 +19,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.dpaez.testexpoav"
+      "package": "com.dpaez.avatar"
     },
     "web": {
       "favicon": "./assets/favicon.png"

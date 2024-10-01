@@ -1,4 +1,4 @@
-package com.dpaez.testexpoav
+package com.dpaez.avatar
 
 import android.app.Application
 import android.content.res.Configuration

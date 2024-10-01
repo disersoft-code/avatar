@@ -1,4 +1,4 @@
-rootProject.name = 'testexpoav'
+rootProject.name = 'avatar'
 
 dependencyResolutionManagement {
   versionCatalogs {
